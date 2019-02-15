@@ -11,7 +11,6 @@ const Character = props => {
             <p className= "attrs">Hair Color: {props.character.hair_color}</p>
             <p className= "attrs">Eye Color: {props.character.eye_color}</p>
             <p className= "attrs">Height: {props.character.height}</p>
-            <div><img src={props.character.homeworl} /></div>
         </div>
     )
 }
