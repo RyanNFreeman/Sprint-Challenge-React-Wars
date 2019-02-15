@@ -1,0 +1,10 @@
+.main-character {
+  width: 50%;
+  margin: 0 auto;
+  border: 10px solid white;
+  height: 400px;
+  /* Hide elements that flow outside the viewable space */
+  overflow: hidden;
+  /* Black background for the screen */
+  background: #000;
+}
