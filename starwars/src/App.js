@@ -1,5 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
+import StarWarsCharacters from './components/StarWarsCharacters'
+
+const style = {
+  width: '100%',
+  margin: '0 auto',
+  position: 'fixed',
+  background: 'white',
+  zIndex: '2',
+  height: '100px'
+}
 
 class App extends Component {
   constructor() {
@@ -32,7 +42,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <h1 className="Header" style={style}>React Wars: <p>watch for your favorite character</p></h1>
+          <div className="wrapper">
+            <div className="crawl">
+             <StarWarsCharacters characters={this.state.starwarsChars}/>
+             </div>
+          </div>
       </div>
     );
   }
